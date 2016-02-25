@@ -1,0 +1,25 @@
+[user]
+	name = <name>
+	email = <email_address>
+[core]
+	autocrlf = false
+	safecrlf = false
+	;Sets a global ignore file.
+	excludesfile = /home/<username>/.gitignore_global
+[help]
+	autocorrect = 1
+[color]
+	ui = auto
+[http]
+	;sslVerify = false
+[alias]
+	h = log --oneline --all --decorate
+	dh = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
+	g = log --oneline --all --decorate --graph
+	c = show --name-status --oneline -r
+[push]
+	default = simple
+[merge]
+	tool = bc
+[mergetool "bc"]
+    cmd = \"c:/program files (x86)/beyond compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
