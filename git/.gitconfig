@@ -1,11 +1,12 @@
 [user]
-	name = <name>
-	email = <email_address>
+	name = <persons name> 
+	email = <email> 
 [core]
 	autocrlf = false
 	safecrlf = false
 	;Sets a global ignore file.
 	excludesfile = /home/<username>/.gitignore_global
+	editor = vim
 [help]
 	autocorrect = 1
 [color]
@@ -22,4 +23,4 @@
 [merge]
 	tool = bc
 [mergetool "bc"]
-    cmd = \"c:/program files (x86)/beyond compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+   ; cmd = \"c:/program files (x86)/beyond compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
