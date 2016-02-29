@@ -1,0 +1,29 @@
+Pathogen: Used to install vim plugins.
+http://www.vim.org/scripts/script.php?script_id=2332
+
+NerdTree: Tree explorere for vim.
+http://www.vim.org/scripts/script.php?script_id=1658
+
+Syntastic: Syntax checker for vim.
+http://www.vim.org/scripts/script.php?script_id=2736
+
+Auto-Pairs: Auto completes stuff like brackets and quotes. 
+http://www.vim.org/scripts/script.php?script_id=3599
+
+tcomment_vim: Allows you to comment out code.
+http://www.vim.org/scripts/script.php?script_id=1173
+
+Most Recently Used(MRU): Allows you to view the most recently opened files.
+http://www.vim.org/scripts/script.php?script_id=194
+
+FuzzyFinder: Finds files and other stuff.
+http://www.vim.org/scripts/script.php?script_id=1984
+
+Surround: Surrounds things.
+http://www.vim.org/scripts/script.php?script_id=1697
+
+Taglist: Source code browser.
+http://www.vim.org/scripts/script.php?script_id=273
+
+snipmate: Adds snippets to vim.
+http://www.vim.org/scripts/script.php?script_id=2540
