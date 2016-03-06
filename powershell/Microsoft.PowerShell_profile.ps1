@@ -2,8 +2,9 @@
 #http://haacked.com/archive/2011/12/13/better-git-with-powershell.aspx/
 #and http://haacked.com/archive/2011/12/19/get-git-for-windows.aspx/
  
+$env:path += ";C:\Tools\Vim\vim74"
 $env:path += ";C:\Tools\Git\cmd"
-$env:path += ";C:\Tools\Git\bin;C:\Git\usr\bin"
+$env:path += ";C:\Tools\Git\bin;C:\Tools\Git\usr\bin"
 $env:path += ";C:\Tools\MongoDB\Server\3.2\bin"
  
 #Setting this for whatever reason is not making msysgit
