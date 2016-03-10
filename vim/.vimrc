@@ -11,6 +11,14 @@ set fileformats=unix,dos,mac
 "Enable filetype-specific indenting
 filetype indent on
 
+"Backup information
+set backup
+set writebackup
+set backupcopy=auto
+set backupext=.bk
+set backupdir=~/.vim_backup
+set dir=~/.vim_backup
+
 "Put line numbers in. 
 :set number 
 
@@ -146,7 +154,6 @@ nnoremap tl :tablast<CR>
 
 "Handy trick.
 nnoremap ; :
-
 
 "mapping for split screen
 nmap <silent> <c-k> :wincmd k<CR>
