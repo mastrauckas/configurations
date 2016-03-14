@@ -46,12 +46,10 @@ function prompt {
 	Write-Host ("@") -f Magenta -nonewline;
 	Write-Host ("{0:yyyy:MM:dd-hh:mmtt}" -f (Get-Date)) -f Red -nonewline;
  
-	if(Test-Path .git) {
-		git branch | foreach {
-			if ($_ -match "^\*(.*)") {
-			  $status_string += "(" + $matches[1].Trim() + ")"
-			}
-		}
+	$gitHead = git symbolic-ref HEAD
+	if($gitHead.length -ne 0) {
+		$postion = $gitHead.LastIndexOf("/")
+		$status_string += "(" + $gitHead.Substring($postion+1) + ")"
 		$stats = if ((git diff --shortstat).length -eq 0) { "" } else { (git diff --shortstat).Trim() }
 		$status_string += [Environment]::NewLine + "[" + $stats  + "]$"
 		
