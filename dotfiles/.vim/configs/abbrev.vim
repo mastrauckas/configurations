@@ -1,0 +1,1 @@
+:iabbrev maa Michael Astrauckas

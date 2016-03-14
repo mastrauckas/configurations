@@ -59,11 +59,18 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+"Quick vim mappings
+:nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+:nnoremap <leader>es :vsplit ~/.vim/configs/settings.vim<CR>
+:nnoremap <leader>em :vsplit ~/.vim/configs/mappings.vim<CR>
+:nnoremap <leader>ep :vsplit ~/.vim/configs/plugins.vim<CR>
+:nnoremap <leader>ea :vsplit ~/.vim/configs/abbrev.vim<CR>
+:nnoremap <leader>sv :source $MYVIMRC<CR>
+
 "Turn on spell checking for text files.
 "autocmd BufRead,BufNewFile * if *.txt | *.blah setlocal spl=en_us spell endif
 
 "Plugin mappings
 nmap <leader>nt :NERDTree<CR>
-
 
 
