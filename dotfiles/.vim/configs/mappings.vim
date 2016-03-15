@@ -60,12 +60,15 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 "Quick vim mappings
-:nnoremap <leader>ev :vsplit $MYVIMRC<CR>
-:nnoremap <leader>es :vsplit ~/.vim/configs/settings.vim<CR>
-:nnoremap <leader>em :vsplit ~/.vim/configs/mappings.vim<CR>
-:nnoremap <leader>ep :vsplit ~/.vim/configs/plugins.vim<CR>
-:nnoremap <leader>ea :vsplit ~/.vim/configs/abbrev.vim<CR>
-:nnoremap <leader>sv :source $MYVIMRC<CR>
+:nnoremap <leader>vv :vsplit $MYVIMRC<CR>
+:nnoremap <leader>vvs :vsplit ~/.vim/configs/settings.vim<CR>
+:nnoremap <leader>vvm :vsplit ~/.vim/configs/mappings.vim<CR>
+:nnoremap <leader>vvp :vsplit ~/.vim/configs/plugins.vim<CR>
+:nnoremap <leader>vvf :vsplit ~/.vim/configs/functions.vim<CR>
+:nnoremap <leader>vva :vsplit ~/.vim/configs/abbrev.vim<CR>
+:nnoremap <leader>vvl :vsplit ~/.vim/configs/local.vim<CR>
+":nnoremap <leader>sv :source $MYVIMRC<CR>
+:nnoremap <leader>sv :source ~/.vimrc<CR>
 
 "Turn on spell checking for text files.
 "autocmd BufRead,BufNewFile * if *.txt | *.blah setlocal spl=en_us spell endif

@@ -21,7 +21,7 @@ set dir=~/.vim/vim_swp
 
 "Put line numbers in. 
 :set number 
-set relativenumber
+:set relativenumber
 
 "Shut off spell checking.
 "Later we turn it on for certain 
@@ -71,7 +71,8 @@ set scrolloff=10
 set sidescrolloff=5 
 
 "Show line number on bar.
-set ruler
+"set ruler
+set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) 
 
 "Fold things.
 set foldmethod=indent
