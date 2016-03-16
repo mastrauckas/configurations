@@ -72,7 +72,7 @@ set sidescrolloff=5
 
 "Show line number on bar.
 "set ruler
-set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) 
+"set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) 
 
 "Fold things.
 set foldmethod=indent
@@ -133,6 +133,10 @@ set cmdheight=2
 set shell=bash
 
 set laststatus=2
+
+"Custom status line.
+set statusline=%<%F[b%n]%y\ %h%m%r%w\%=%-20.(%P\ 0x%B\ %l\.%c\ \of\ %L\ Line(s)%)
+ 
 
 
 
