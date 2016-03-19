@@ -1,6 +1,6 @@
 [user]
-	name = <persons name> 
 	email = <email> 
+	name = <fullname> 
 [core]
 	autocrlf = false
 	safecrlf = false
