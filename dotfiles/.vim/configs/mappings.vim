@@ -73,7 +73,5 @@ nmap <silent> <c-l> :wincmd l<CR>
 "Turn on spell checking for text files.
 "autocmd BufRead,BufNewFile * if *.txt | *.blah setlocal spl=en_us spell endif
 
-"Plugin mappings
-nmap <leader>nt :NERDTree<CR>
 
 

@@ -1,12 +1,10 @@
-
-
 "Not really need because Vim will do this if you have a .vimrc file.
 set nocompatible
 
 set path=.,**
 
 "Can't we all just get along?
-set fileformats=unix,dos,mac 
+set fileformats=unix,dos,mac
 
 "Enable filetype-specific indenting
 filetype indent on
@@ -19,7 +17,7 @@ set backupext=.bk
 set backupdir=~/.vim/vim_backup
 set dir=~/.vim/vim_swp
 
-"Put line numbers in. 
+"Put line numbers in.
 :set number 
 :set relativenumber
 
@@ -110,10 +108,10 @@ set autochdir
 set hidden
 
 "Remember lots of history.
-set history=500
+set history=5000
 
 "Remember lots of undo.
-set undolevels=500
+set undolevels=5000
 
 "Put a title.
 set title
@@ -136,7 +134,5 @@ set laststatus=2
 
 "Custom status line.
 set statusline=%<%F[b%n]%y\ %h%m%r%w\%=%-20.(%P\ 0x%B\ %l\.%c\ \of\ %L\ Line(s)%)
- 
-
 
 
