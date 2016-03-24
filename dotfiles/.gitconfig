@@ -1,6 +1,6 @@
 [user]
-	email = <email> 
-	name = <fullname> 
+	email = <email>
+	name = <fullname>
 [core]
 	autocrlf = false
 	safecrlf = false
@@ -18,9 +18,15 @@
 	dh = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
 	g = log --oneline --all --decorate --graph
 	c = show --name-status --oneline -r
+	dt = difftool
+	d = diff
 [push]
 	default = simple
 [merge]
-	tool = bc
-[mergetool "bc"]
-   ; cmd = \"c:/program files (x86)/beyond compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	tool = vimdiff
+[mergetool]
+    prompt=true
+[diff]
+    tool=vimdiff
+[difftool]
+    prompt=true
