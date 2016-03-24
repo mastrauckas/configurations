@@ -18,11 +18,11 @@ set backupdir=~/.vim/vim_backup
 set dir=~/.vim/vim_swp
 
 "Put line numbers in.
-:set number 
+:set number
 :set relativenumber
 
 "Shut off spell checking.
-"Later we turn it on for certain 
+"Later we turn it on for certain
 "filetype.
 set spl=en_us spell
 set nospell
@@ -44,16 +44,16 @@ set expandtab
 set copyindent
 
 "Round indent to multiple of 'shiftwidth'
-set shiftround  
+set shiftround
 
 "Do smart indenting when starting a new line
-set smartindent 
+set smartindent
 
 "Copy indent from current line, over to the new line
 set autoindent
 
 "Show last command bottm  right corner of vim
-set showcmd 
+set showcmd
 
 "Highlight current line.
 "set cursorline
@@ -66,11 +66,11 @@ set showmatch
 set scrolloff=10
 
 "Keep 5 lines left/right
-set sidescrolloff=5 
+set sidescrolloff=5
 
 "Show line number on bar.
 "set ruler
-"set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) 
+"set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
 
 "Fold things.
 set foldmethod=indent
@@ -92,7 +92,7 @@ set backspace=2
 set ignorecase
 
 "Overrides 'ignorecase' search word has
-"upper case characters 
+"upper case characters
 set smartcase
 
 "Highlights words that mart search.
@@ -133,6 +133,6 @@ set shell=bash
 set laststatus=2
 
 "Custom status line.
-set statusline=%<%F[b%n]%y\ %h%m%r%w\%=%-20.(%P\ 0x%B\ %l\.%c\ \of\ %L\ Line(s)%)
+set statusline=%<%F[b%n]%y\ %h%m%r%w\%=%-20.(%P\ 0x%B\ %l\.%c\ \of\ %L\ Line(s)\ \ \ %)
 
 
