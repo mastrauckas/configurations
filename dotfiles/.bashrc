@@ -58,11 +58,11 @@ fi
 
 #Lets pull in other files
 
-# Load ~/.bash_aliases to get all my aliases.  
+# Load ~/.bash_aliases to get all my aliases.
 # This will cleanup .bashrc a bit.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-if [ -f ~/.bash/.bash_aliases ]; then
-    . ~/.bash/.bash_aliases
+if [ -f ~/.bash/bash_aliases ]; then
+    . ~/.bash/bash_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -77,13 +77,13 @@ if ! shopt -oq posix; then
 fi
 
 #Adding get functions.
-if [ -f ~/.bash/.bash_git ]; then
-    . ~/.bash/.bash_git
+if [ -f ~/.bash/bash_git ]; then
+    . ~/.bash/bash_git
 fi
 
 
 if [ "$color_prompt" = yes ]; then
-   #PS1='\033[32m\]\u@${HOSTNAME}\[\033[0m\] \033[3;33m\]\w\[\033[0m\]\033[36m\]\$(git_branch)\[\033[0m\]$ ' 
+   #PS1='\033[32m\]\u@${HOSTNAME}\[\033[0m\] \033[3;33m\]\w\[\033[0m\]\033[36m\]\$(git_branch)\[\033[0m\]$ '
 
    PS1='${debian_chroot:+($debian_chroot)}'
    PS1="$PS1\[\033[00;32m\]\u"
@@ -100,7 +100,7 @@ if [ "$color_prompt" = yes ]; then
    PS1="$PS1\[\033[01;35m\]@"
    #Show path with \w.
    PS1="$PS1\[\033[01;33m\]\w"
-   #Show $ 
+   #Show $
    PS1="$PS1\[\033[00;36m\] $"
    #Show git branch.
    PS1="$PS1\[\033[01;96m\]\$(gitBranchDetails)"
@@ -119,6 +119,11 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+
+if [ -f ~/.bash/local ]; then
+    . ~/.bash/local
+fi
 
 
 export PATH=/opt/node-v5.7.0-linux-x64/bin:$PATH
