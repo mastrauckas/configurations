@@ -24,8 +24,9 @@ alias muc="history | awk 'BEGIN {FS=\"[ \t]+|\\|\"} {print \$3}' | sort | uniq -
 
 alias sb="source ~/.bashrc"
 alias vb="vim ~/.bashrc"
-alias vba="vim ~/.bash/.bash_aliases"
-alias vbg="vim ~/.bash/.bash_git"
+alias vba="vim ~/.bash/bash_aliases"
+alias vbg="vim ~/.bash/bash_git"
+alias vbl="vim ~/bash/bash_local"
 
 alias vv="vim ~/.vimrc"
 alias vvs="vim ~/.vim/configs/settings.vim"

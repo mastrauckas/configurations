@@ -81,6 +81,9 @@ if [ -f ~/.bash/bash_git ]; then
     . ~/.bash/bash_git
 fi
 
+if [ -f ~/.bash/bash_local ]; then
+    . ~/.bash/bash_local
+fi
 
 if [ "$color_prompt" = yes ]; then
    #PS1='\033[32m\]\u@${HOSTNAME}\[\033[0m\] \033[3;33m\]\w\[\033[0m\]\033[36m\]\$(git_branch)\[\033[0m\]$ '
@@ -119,11 +122,5 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
-
-if [ -f ~/.bash/local ]; then
-    . ~/.bash/local
-fi
-
 
 export PATH=/opt/node-v5.7.0-linux-x64/bin:$PATH
