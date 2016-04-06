@@ -17,5 +17,7 @@ let g:airline_section_z = '%3p%% %#__accent_bold#%{g:airline_symbols.linenr}%#__
 
 "Disables pathogen plugins.
 let g:pathogen_disabled = ['']
-"let g:pathogen_disabled = ['vim-airline']
+if has('win32unix') || has('win32')
+    let g:pathogen_disabled = ['vim-airline']
+endif
 execute pathogen#infect()
