@@ -1,9 +1,9 @@
 let mapleader = "\<Space>"
 "Arrow keys
-noremap <down> ddp
+noremap <down> <Nop>
 noremap <left> <Nop>
 noremap <right> <Nop>
-noremap <up> ddkP
+noremap <up> <Nop>
 inoremap <down> <Nop>
 inoremap <left> <Nop>
 inoremap <right> <Nop>
