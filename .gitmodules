@@ -13,3 +13,12 @@
 [submodule "dotfiles/.vim/bundle/vim-airline-themes"]
 	path = dotfiles/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "dotfiles/.vim/bundle/ctrlp.vim"]
+	path = dotfiles/.vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "dotfiles/.vim/bundle/pydiction"]
+	path = dotfiles/.vim/bundle/pydiction
+	url = https://github.com/rkulla/pydiction.git
+[submodule "dotfiles/.vim/bundle/vim-flake8"]
+	path = dotfiles/.vim/bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
