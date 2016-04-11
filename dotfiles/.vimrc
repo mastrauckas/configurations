@@ -8,4 +8,6 @@ source ~/.vim/configs/settings.vim
 source ~/.vim/configs/mappings.vim
 source ~/.vim/configs/plugins.vim
 source ~/.vim/configs/abbrev.vim
-source ~/.vim/configs/local.vim
+if !empty(glob("~/.vim/configs/local.vim"))
+    source ~/.vim/configs/local.vim
+endif
