@@ -38,8 +38,8 @@ nnoremap <leader>o o<ESC>k
 nnoremap <leader>O O<ESC>j
 
 "Paste from yank registers
-noremap yp "0p
-noremap yP "0P
+noremap <leader>yp "0p
+noremap <leader>yP "0P
 
 "Clear last search.
 nnoremap <CR> :nohlsearch<CR>/<BS>

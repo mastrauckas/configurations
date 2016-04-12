@@ -132,6 +132,9 @@ set shell=bash
 
 set laststatus=2
 
+"Tell vim using dark background
+set background=dark
+
 "Custom status line.
 set statusline=%<%F[b%n]%y\ %h%m%r%w\%=%-20.(%P\ 0x%B\ %l\.%c\ \of\ %L\ Line(s)\ \ \ %)
 
