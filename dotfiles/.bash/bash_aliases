@@ -27,6 +27,7 @@ alias vb="vim ~/.bashrc"
 alias vba="vim ~/.bash/bash_aliases"
 alias vbg="vim ~/.bash/bash_git"
 alias vbl="vim ~/bash/bash_local"
+alias vbe="vim ~/bash/bash_exports"
 
 alias vv="vim ~/.vimrc"
 alias vvs="vim ~/.vim/configs/settings.vim"

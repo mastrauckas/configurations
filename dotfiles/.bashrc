@@ -65,6 +65,10 @@ if [ -f ~/.bash/bash_aliases ]; then
     . ~/.bash/bash_aliases
 fi
 
+if [ -f ~/.bash/bash_exports ]; then
+    . ~/.bash/bash_exports
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -123,4 +127,3 @@ xterm*|rxvt*)
     ;;
 esac
 
-export PATH=/opt/node-v5.7.0-linux-x64/bin:$PATH
