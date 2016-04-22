@@ -31,7 +31,10 @@ nnoremap <leader>u gUiW
 nnoremap <leader>l guiW
 
 "I hate using ~ key, so hard to press!
-nnoremap <leader>s ~s
+"Also want to go back to where the cursor was.
+nnoremap <leader>S ~h
+"map sort function to a key
+vnoremap <Leader>s :sort<CR>
 
 "Insert lines without being in INSERT mode.
 nnoremap <leader>o o<ESC>k

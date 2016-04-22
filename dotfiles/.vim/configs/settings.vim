@@ -21,6 +21,10 @@ set dir=~/.vim/vim_swp
 :set number
 :set relativenumber
 
+"To lookup textoption, look up
+":h fo-
+:set textwidth=80
+
 "Shut off spell checking.
 "Later we turn it on for certain
 "filetype.
