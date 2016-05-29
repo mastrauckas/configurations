@@ -45,7 +45,7 @@ noremap <leader>yp "0p
 noremap <leader>yP "0P
 
 "Clear last search.
-nnoremap <CR> :nohlsearch<CR>/<BS>
+nnoremap <leader><CR> :nohlsearch<CR>/<BS>
 
 "Esc is so far away without this mapping.
 inoremap jj <Esc>

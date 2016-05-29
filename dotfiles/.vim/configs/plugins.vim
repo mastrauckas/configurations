@@ -26,11 +26,18 @@ let g:airline_theme='luna'
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 "let g:pydiction_menu_height = 3
 
-"let g:flake8_cmd='~/.local/lib/python3.4/site-packages/flake8/'
+autocmd BufWritePost *.py call Flake8()
+let g:flake8_show_in_gutter=1
+let g:flake8_show_in_file=1
+highlight link Flake8_Error      Error
+highlight link Flake8_Warning    WarningMsg
+highlight link Flake8_Complexity WarningMsg
+highlight link Flake8_Naming     WarningMsg
+highlight link Flake8_PyFlake    WarningMsg
 
 "Disables pathogen plugins.
 let g:pathogen_disabled = ['']
 if has('win32unix') || has('win32')
-    let g:pathogen_disabled = ['vim-airline']
+    let g:pathogen_disabled = ['vim-airline', 'nerdtree']
 endif
 execute pathogen#infect()

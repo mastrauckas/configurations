@@ -23,7 +23,7 @@ set dir=~/.vim/vim_swp
 
 "To lookup textoption, look up
 ":h fo-
-:set textwidth=80
+:set textwidth=79
 
 "Shut off spell checking.
 "Later we turn it on for certain
