@@ -15,7 +15,8 @@
 	;sslVerify = false
 [alias]
 	h = log --oneline --all --decorate
-	dh = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
+	dh = log --pretty=format:'%C(yellow)%h %Cred%ad %Creset%an%Cgreen%d %Creset%s' --date=short
+	dht = log --no-walk --tags --pretty='%C(yellow)%h %Cred%ad %Creset%an%Cgreen%d %Creset%s' --decorate=full
 	g = log --oneline --all --decorate --graph
 	c = show --name-status --oneline -r
 	dt = difftool
