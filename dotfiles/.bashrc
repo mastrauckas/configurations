@@ -61,13 +61,6 @@ fi
 # Load ~/.bash_aliases to get all my aliases.
 # This will cleanup .bashrc a bit.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-if [ -f ~/.bash/global_aliases ]; then
-    . ~/.bash/global_aliases
-fi
-
-if [ -f ~/.bash/local_aliases ]; then
-    . ~/.bash/local_aliases
-fi
 
 if [ -f ~/.bash/global_exports ]; then
     . ~/.bash/global_exports
@@ -75,6 +68,14 @@ fi
 
 if [ -f ~/.bash/local_exports ]; then
     . ~/.bash/local_exports
+fi
+
+if [ -f ~/.bash/global_aliases ]; then
+    . ~/.bash/global_aliases
+fi
+
+if [ -f ~/.bash/local_aliases ]; then
+    . ~/.bash/local_aliases
 fi
 
 if [ -f ~/.bash/local_miscellaneous ]; then
