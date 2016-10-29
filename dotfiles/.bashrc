@@ -125,7 +125,7 @@ if [ "$color_prompt" = yes ]; then
    #Show git branch.
    PS1="$PS1\[\033[01;96m\]\$(gitBranchDetails)"
    #Cursor color.
-   PS1="$PS1\[\033[01;37m\]"
+   PS1="$PS1\[\033[01;37m\]$ "
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
