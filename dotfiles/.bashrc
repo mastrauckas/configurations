@@ -62,24 +62,24 @@ fi
 # This will cleanup .bashrc a bit.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash/global_exports ]; then
-    . ~/.bash/global_exports
+if [ -f ~/.bash/.global_exports ]; then
+    . ~/.bash/.global_exports
 fi
 
-if [ -f ~/.bash/local_exports ]; then
-    . ~/.bash/local_exports
+if [ -f ~/.bash/.local_exports ]; then
+    . ~/.bash/.local_exports
 fi
 
-if [ -f ~/.bash/global_aliases ]; then
-    . ~/.bash/global_aliases
+if [ -f ~/.bash/.global_aliases ]; then
+    . ~/.bash/.global_aliases
 fi
 
-if [ -f ~/.bash/local_aliases ]; then
-    . ~/.bash/local_aliases
+if [ -f ~/.bash/.local_aliases ]; then
+    . ~/.bash/.local_aliases
 fi
 
-if [ -f ~/.bash/local_miscellaneous ]; then
-    . ~/.bash/local_miscellaneous
+if [ -f ~/.bash/.local_miscellaneous ]; then
+    . ~/.bash/.local_miscellaneous
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -98,8 +98,8 @@ if [ -f ~/.bash/.bash_functions ]; then
     . ~/.bash/.bash_functions
 fi
 
-if [ -f ~/.bash/local_aliases ]; then
-    . ~/.bash/local_aliases
+if [ -f ~/.bash/.local_aliases ]; then
+    . ~/.bash/.local_aliases
 fi
 
 if [ "$color_prompt" = yes ]; then
