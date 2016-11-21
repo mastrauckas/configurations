@@ -1,4 +1,4 @@
-dotfiles/.bash/local_exports
-dotfiles/.bash/local_miscellaneous
-dotfiles/.bash/local_aliases
-dotfiles/.vim/configs/local.vim
+dotfiles/.bash/.local_exports.bash
+dotfiles/.bash/.local_miscellaneous.bash
+dotfiles/.bash/.local_aliases.bash
+dotfiles/.vim/configs/.local.vim
