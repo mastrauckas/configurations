@@ -94,8 +94,8 @@ if ! shopt -oq posix; then
 fi
 
 #Adding get functions.
-if [ -f ~/.bash/bash_git ]; then
-    . ~/.bash/bash_git
+if [ -f ~/.bash/.bash_functions ]; then
+    . ~/.bash/.bash_functions
 fi
 
 if [ -f ~/.bash/local_aliases ]; then
@@ -120,10 +120,7 @@ if [ "$color_prompt" = yes ]; then
    PS1="$PS1\[\033[01;35m\]@"
    #Show path with \w.
    PS1="$PS1\[\033[01;33m\]\w"
-   #Show $
-   PS1="$PS1\[\033[00;36m\] $"
-   #Show git branch.
-   PS1="$PS1\[\033[01;96m\]\$(gitBranchDetails)"
+   PS1="$PS1\[\033[01;96m\]\$(getEndPrompt)"
    #Cursor color.
    PS1="$PS1\[\033[01;37m\]$ "
 else
