@@ -104,25 +104,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
    #PS1='\033[32m\]\u@${HOSTNAME}\[\033[0m\] \033[3;33m\]\w\[\033[0m\]\033[36m\]\$(git_branch)\[\033[0m\]$ '
-
-   PS1='${debian_chroot:+($debian_chroot)}'
-   PS1="$PS1\[\033[00;32m\]\u"
-   #Show @.
-   PS1="$PS1\[\033[01;35m\]@"
-   #show host with \h.
-   PS1="$PS1\[\033[00;37m\]\h"
-   #Show @.
-   PS1="$PS1\[\033[01;35m\]@"
-   #Show time.
-   #Display current date and time.
-   PS1="$PS1\[\033[01;31m\]\D{%Y:%m:%d-%l:%M:%S%p}"
-   #Show @
-   PS1="$PS1\[\033[01;35m\]@"
-   #Show path with \w.
-   PS1="$PS1\[\033[01;33m\]\w"
-   PS1="$PS1\[\033[01;96m\]\$(getEndPrompt)"
-   #Cursor color.
-   PS1="$PS1\[\033[01;37m\]$ "
+   PS1="$(getCustomBashPrompt)"
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
