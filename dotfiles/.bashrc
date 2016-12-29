@@ -62,6 +62,10 @@ fi
 # This will cleanup .bashrc a bit.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 if [ -f ~/.bash/.global_exports.bash ]; then
     . ~/.bash/.global_exports.bash
 fi
