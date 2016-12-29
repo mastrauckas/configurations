@@ -62,8 +62,8 @@ fi
 # This will cleanup .bashrc a bit.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+if [ -f ~/bash-completion ]; then
+  . ~/bash-completion
 fi
 
 if [ -f ~/.bash/.global_exports.bash ]; then
@@ -84,17 +84,6 @@ fi
 
 if [ -f ~/.bash/.local_miscellaneous.bash ]; then
     . ~/.bash/.local_miscellaneous.bash
-fi
-
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
 fi
 
 #Adding get functions.
