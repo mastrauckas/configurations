@@ -96,8 +96,7 @@ if [ -f ~/.bash/.local_aliases.bash ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-   #PS1='\033[32m\]\u@${HOSTNAME}\[\033[0m\] \033[3;33m\]\w\[\033[0m\]\033[36m\]\$(git_branch)\[\033[0m\]$ '
-   PS1="$(getCustomBashPrompt)"
+   PS1="$(getCustomBashPromptWithInformation)"
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi

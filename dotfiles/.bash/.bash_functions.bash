@@ -64,7 +64,7 @@ function getEndPrompt {
    echo "$prompt"
 }
 
-function getCustomBashPrompt {
+function getCustomBashPromptWithInformation {
    local customBashPrompt
 
    customBashPrompt='${debian_chroot:+($debian_chroot)}'
