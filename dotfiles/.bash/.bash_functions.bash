@@ -82,8 +82,9 @@ function getCustomBashPromptWithInformation {
    customBashPrompt="$customBashPrompt$LIGHT_PURPLE@"
    #Show path with \w.
    customBashPrompt="$customBashPrompt$YELLOW\w"
-   customBashPrompt="$customBashPrompt$BI_CYAN$(getEndPrompt)"
+   customBashPrompt="$customBashPrompt$BI_CYAN\$(getEndPrompt)"
    #Cursor color.
    customBashPrompt="$customBashPrompt$WHITE$ "
    echo "$customBashPrompt"
+
 }
