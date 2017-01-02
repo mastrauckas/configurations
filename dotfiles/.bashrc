@@ -96,7 +96,7 @@ if [ -f ~/.bash/.local_aliases.bash ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-   PS1="$(getCustomBashPromptWithInformation)"
+   PROMPT_COMMAND=getCustomBashPromptWithUnicode
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
