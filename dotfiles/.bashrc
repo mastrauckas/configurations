@@ -62,6 +62,10 @@ fi
 # This will cleanup .bashrc a bit.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
+if [ -f ~/z/z.sh ]; then
+   . ~/z/z.sh
+fi
+
 if [ -f ~/bash-completion ]; then
   . ~/bash-completion
 fi
