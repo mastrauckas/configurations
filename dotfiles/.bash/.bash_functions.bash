@@ -117,12 +117,7 @@ function getCustomBashPromptWithUnicode {
    local customBashPrompt
 
    customBashPrompt='${debian_chroot:+($debian_chroot)}'
-   if [ $? != 0 ]; then
-      customBashPrompt="${customBashPrompt}${BOLD_RED}➜ "
-   else
-      customBashPrompt="${customBashPrompt}${BOLD_GREEN}➜ "
-   fi
-
+   customBashPrompt="${customBashPrompt}${BOLD_GREEN}➜ "
    customBashPrompt="${customBashPrompt}${RESET}"
    customBashPrompt="${customBashPrompt}${LIGHT_CYAN}\w"
    customBashPrompt="${customBashPrompt}${RESET}"
