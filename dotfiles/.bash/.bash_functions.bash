@@ -16,7 +16,14 @@ ORANGE='\[\e[38;5;214m\]'
 function gitBranchDetails {
    local branchName="$(getCurrentGitBranch)"
    if [ ! -z "$branchName" -a "$branchName" != " " ]; then
-      echo "("${branchName}")";
+      local sha=$(getCurrentGitBranchSha)
+      local branchNameAndSha
+      if [ "$branchName" == "$sha" ]; then
+         branchNameAndSha="DETACHED HEAD:${sha}"
+      else
+         branchNameAndSha="${branchName}:${sha}"
+      fi
+      echo "("${branchNameAndSha}")";
       echo -n [`git diff --shortstat`]
    fi
 }
