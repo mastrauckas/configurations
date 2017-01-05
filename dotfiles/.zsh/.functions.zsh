@@ -66,7 +66,7 @@ function getCustomPromptWithUnicode {
    #customPrompt='${debian_chroot:+($debian_chroot)}'
    customPrompt="${customPrompt}%{$BOLD_GREEN%}➜ "
    customPrompt="${customPrompt}%{$RESET%}"
-   customPrompt="${customPrompt}${LIGHT_CYAN}%~"
+   customPrompt="${customPrompt}%{$LIGHT_CYAN%}%~"
    customPrompt="${customPrompt}%{$RESET%}"
 
    local branchName="$(getCurrentGitBranch)"
