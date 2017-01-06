@@ -9,57 +9,6 @@ WHITE="%{$fg[white]%}"
 ORANGE=$'%{\e[38;5;214m%}'
 RESET="%{$reset_color%}"
 
-function getGitVersion {
-   IFS=' ' read -a arry <<< "$(git --version)"
-   echo ${arry[2]%.*}
-}
-
-function isDirty {
-   local SUBMODULE_SYNTAX=''
-   #Going to assume it's grater than 1.7.2 which is
-   #when --ignore-submodules=dirty was added
-   SUBMODULE_SYNTAX="--ignore-submodules=dirty"
-
-   if [[ -n $(git status -s ${SUBMODULE_SYNTAX}  2> /dev/null) ]]; then
-      echo "1"
-   else
-      echo "0"
-  fi
-}
-
-function getCurrentGitBranch {
-   local ref
-   ref=$(command git symbolic-ref --quiet HEAD 2> /dev/null)
-   local ret=$?
-   if [[ $ret != 0 ]]; then
-      [[ $ret == 128 ]] && return  # no git repo.
-      ref=$(command git rev-parse --short HEAD 2> /dev/null) || return
-   fi
-   echo ${ref#refs/heads/}
-}
-
-function getCurrentGitBranchSha {
-   local ref
-   ref=$(command git symbolic-ref --quiet HEAD 2> /dev/null)
-   local ret=$?
-   if [[ $ret != 0 ]]; then
-      [[ $ret == 128 ]] && return  # no git repo.
-   fi
-   echo $(command git rev-parse --short HEAD)
-}
-
-function getEndPrompt {
-   GIT_BRANCH_DETAILS=$(gitBranchDetails)
-   local prompt
-   if [ -n "$GIT_BRANCH_DETAILS" ]; then
-      #Show git branch.
-      prompt=$GIT_BRANCH_DETAILS
-   fi
-
-   #Just show prompt.
-   echo "$prompt"
-}
-
 function getCustomPromptWithUnicode {
    local customPrompt
 
