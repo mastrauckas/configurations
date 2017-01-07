@@ -63,44 +63,47 @@ fi
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 if [ -f ~/z/z.sh ]; then
-   . ~/z/z.sh
+   source ~/z/z.sh
 fi
 
 if [ -f ~/bash-completion ]; then
-  . ~/bash-completion
+  source ~/bash-completion
 fi
 
-if [ -f ~/.bash/.global_exports.bash ]; then
-    . ~/.bash/.global_exports.bash
+if [ -f ~/bash/global_exports.bash ]; then
+    source ~/bash/global_exports.bash
 fi
 
-if [ -f ~/.bash/.local_exports.bash ]; then
-    . ~/.bash/.local_exports.bash
+if [ -f ~/.bash/local_exports.bash ]; then
+    source ~/.bash/local_exports.bash
 fi
 
-if [ -f ~/.bash/.global_aliases.bash ]; then
-    . ~/.bash/.global_aliases.bash
+if [ -f ~/.bash/global_aliases.bash ]; then
+    source ~/.bash/global_aliases.bash
 fi
 
-if [ -f ~/.bash/.local_aliases.bash ]; then
-    . ~/.bash/.local_aliases.bash
+if [ -f ~/.bash/local_aliases.bash ]; then
+    source ~/.bash/local_aliases.bash
 fi
 
-if [ -f ~/.bash/.local_miscellaneous.bash ]; then
-    . ~/.bash/.local_miscellaneous.bash
+if [ -f ~/.bash/local_miscellaneous.bash ]; then
+    source ~/.bash/local_miscellaneous.bash
 fi
 
-#Adding get functions.
-if [ -f ~/.bash/.bash_functions.bash ]; then
-    . ~/.bash/.bash_functions.bash
+if [ -f ~/.bash/prompt_functions.bash ]; then
+    source ~/.bash/prompt_functions.bash
 fi
 
-if [ -f ~/.bash/.local_aliases.bash ]; then
-    . ~/.bash/.local_aliases.bash
+if [ -f ~/.bash/git_functions.bash ]; then
+    source ~/.bash/git_functions.bash
+fi
+
+if [ -f ~/.bash/local_aliases.bash ]; then
+    source ~/.bash/local_aliases.bash
 fi
 
 if [ "$color_prompt" = yes ]; then
-   PROMPT_COMMAND=getCustomBashPromptWithUnicode
+   PROMPT_COMMAND=getCustomPromptWithUnicode
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
