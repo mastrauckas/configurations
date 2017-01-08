@@ -34927,9 +34927,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>510 95 697 509 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>337 170 796 473 0 0 1440 877 </string>
+	<string>337 131 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>720 51 717 826 0 0 1440 877 </string>
+	<string>720 425 570 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>404 76 570 452 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -36110,7 +36110,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>My Default</string>
+			<string>My Profile</string>
 			<key>Non Ascii Font</key>
 			<string>Monaco 12</string>
 			<key>Non-ASCII Anti Aliased</key>
