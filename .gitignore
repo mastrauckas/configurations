@@ -1,5 +1,16 @@
 dotfiles/.bash/.local_exports.bash
 dotfiles/.bash/.local_miscellaneous.bash
 dotfiles/.bash/.local_aliases.bash
+dotfiles/.bash/local_exports.bash
+dotfiles/.bash/local_miscellaneous.bash
+dotfiles/.bash/local_aliases.bash
+
+dotfiles/.zsh/.local_exports.zsh
+dotfiles/.zsh/.local_miscellaneous.zsh
+dotfiles/.zsh/.local_aliases.zsh
+dotfiles/.zsh/local_exports.zsh
+dotfiles/.zsh/local_miscellaneous.zsh
+dotfiles/.zsh/local_aliases.zsh
+
 dotfiles/.vim/configs/.local.vim
 .DS_Store

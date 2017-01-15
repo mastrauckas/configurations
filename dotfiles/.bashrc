@@ -70,8 +70,12 @@ if [ -f ~/bash-completion ]; then
   source ~/bash-completion
 fi
 
-if [ -f ~/bash/global_exports.bash ]; then
-    source ~/bash/global_exports.bash
+if [ -f ~/.bash/virtual_environments.bash ]; then
+   source ~/.bash/virtual_environments.bash
+fi
+
+if [ -f ~/.bash/global_exports.bash ]; then
+    source ~/.bash/global_exports.bash
 fi
 
 if [ -f ~/.bash/local_exports.bash ]; then

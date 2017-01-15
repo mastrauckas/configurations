@@ -13,6 +13,7 @@ function getCustomPromptWithUnicode {
    local customPrompt
 
    #customPrompt='${debian_chroot:+($debian_chroot)}'
+   customPrompt="${customPrompt}${BOLD_RED}$(getVirtualEnvironments)"
    customPrompt="${customPrompt}${BOLD_GREEN}➜ "
    customPrompt="${customPrompt}${RESET}"
    customPrompt="${customPrompt}${LIGHT_CYAN}%~"
