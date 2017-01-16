@@ -19,7 +19,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias muc="history | awk 'BEGIN {FS=\"[ \t]+|\\|\"} {print \$3}' | sort | uniq -c | sort -nr | head"
+alias muc=""history | awk 'BEGIN {FS=\"[ \\t]+|\\\\|\"} {print \$3}' | sort | uniq -c | sort -nr | head"
 
 # source config
 alias sc="source ~/.zshrc"
