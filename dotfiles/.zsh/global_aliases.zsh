@@ -23,3 +23,6 @@ alias muc="history | awk 'BEGIN {FS=\"[ \\t]+|\\\\|\"} {print \$3}' | sort | uni
 
 # source config
 alias sc="source ~/.zshrc"
+
+# start a new tmux session
+alias tmuxs="tmux new -s"
