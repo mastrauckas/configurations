@@ -12,5 +12,8 @@ dotfiles/.zsh/local_exports.zsh
 dotfiles/.zsh/local_miscellaneous.zsh
 dotfiles/.zsh/local_aliases.zsh
 
+dotfiles/.weechat/logs
+dotfiles/.weechat/weechat.log
+
 dotfiles/.vim/configs/.local.vim
 .DS_Store
