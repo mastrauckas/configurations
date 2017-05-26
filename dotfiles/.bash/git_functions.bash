@@ -1,6 +1,5 @@
 function isDirty {
    local SUBMODULE_SYNTAX=''
-   local gitVersion=$(getGitVersion)
    #Going to assume it's grater than 1.7.2 which is
    #when --ignore-submodules=dirty was added
    SUBMODULE_SYNTAX="--ignore-submodules=dirty"
