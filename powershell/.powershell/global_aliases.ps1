@@ -16,3 +16,7 @@ function ll {
 function target($symlink) {
     Get-Item $symlink | Select-Object -ExpandProperty Target
 }
+
+function eval($string) {
+     Invoke-Expression $string
+}
