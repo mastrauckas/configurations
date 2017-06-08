@@ -9,8 +9,7 @@
 function GetCurrentGitBranch {
     $ref=git symbolic-ref --quiet HEAD
 	if($ref.length -ne 0) {
-		$postion = $ref.LastIndexOf("/")
-		return $ref.Substring($postion+1)
+		return $ref.Substring(11)
     }
     else {
         $ref=git rev-parse --short HEAD
