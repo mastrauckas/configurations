@@ -5,7 +5,7 @@
 New-Alias -name open -value ii
 
 #Make alias with parameters into functions
-function ll { 
+function ll {
     Get-ChildItem | Sort-Object LastWriteTime
  }
 
@@ -19,4 +19,29 @@ function target($symlink) {
 
 function eval($string) {
      Invoke-Expression $string
+}
+
+function RunSsh($userIdentity ) {
+   $agent=ssh-agent
+   $position=$agent[0].IndexOf("=")
+   $ending=$agent[0].IndexOf(";")
+
+   $variableStartPosition=$agent[0].IndexOf("export")
+   $variableEndPosition=$agent[0].LastIndexOf(";")
+   $variableName=$agent[0].Substring($variableStartPosition+7,$variableEndPosition-$variableStartPosition-7)
+   [Environment]::SetEnvironmentVariable($variableName, $agent[0].Substring($position+1,$ending-$position-1))
+
+   $position=$agent[1].IndexOf("=")
+   $ending=$agent[1].IndexOf(";")
+
+   $variableStartPosition=$agent[1].IndexOf("export")
+   $variableEndPosition=$agent[1].LastIndexOf(";")
+   $variableName=$agent[1].Substring($variableStartPosition+7,$variableEndPosition-$variableStartPosition-7)
+   [Environment]::SetEnvironmentVariable($variableName, $agent[1].Substring($position+1,$ending-$position-1))
+
+   if($userIdentity -eq 0) {
+      ssh-add
+   } else {
+      ssh-add $userIdentity
+   }
 }

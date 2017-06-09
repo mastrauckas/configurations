@@ -21,3 +21,7 @@ function GetCurrentGitBranchSha {
      return git rev-parse --short HEAD
 }
 
+function GetRemoteBranch {
+   return  git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)
+}
+
