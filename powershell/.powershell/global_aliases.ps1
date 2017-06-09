@@ -39,9 +39,11 @@ function RunSsh($userIdentity ) {
    $variableName=$agent[1].Substring($variableStartPosition+7,$variableEndPosition-$variableStartPosition-7)
    [Environment]::SetEnvironmentVariable($variableName, $agent[1].Substring($position+1,$ending-$position-1))
 
-   if($userIdentity -eq 0) {
+   if($userIdentity.Length -eq 0) {
       ssh-add
    } else {
       ssh-add $userIdentity
    }
 }
+
+
