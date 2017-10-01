@@ -1,3 +1,7 @@
 if [ -f ~/z/z.sh ]; then
-   source ~/z/z.sh
+   . ~/z/z.sh
+fi
+
+if [ -f /usr/local/etc/profile.d/z.sh ]; then
+   . /usr/local/etc/profile.d/z.sh
 fi
