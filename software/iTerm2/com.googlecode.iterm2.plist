@@ -8,6 +8,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>AutoCommandHistory</key>
 	<false/>
 	<key>CheckTestRelease</key>
@@ -34926,10 +34928,14 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>410 374 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>250 271 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 425 570 452 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>176 70 570 452 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -36186,7 +36192,9 @@
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>527817074.56760198</real>
 	<key>OpenTmuxWindowsIn</key>
@@ -36239,7 +36247,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-22T23:52:25Z</date>
+	<date>2017-09-28T21:08:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -36255,7 +36263,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.1.1</string>
+	<string>3.1.3.beta.1</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>5</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
