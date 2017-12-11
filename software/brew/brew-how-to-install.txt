@@ -1,0 +1,6 @@
+Add packages to package file.
+brew leaves > brew-packages.txt
+
+Install packages on new machine.
+brew install $(cat brew-packages.txt)
+

@@ -1,6 +1,11 @@
-Add packages to package file.
-brew leaves > packages.txt
+Add brew packages to package file.
+brew leaves > brew-packages.txt
 
 Install packages on new machine.
-brew install $(cat packages.txt)
+brew install $(cat brew-packages.txt)
 
+Add cask packages to package file.
+brew cask list > cask-packages.txt
+
+Install packages on new machine.
+brew cask install $(cat cask-packages.txt)
