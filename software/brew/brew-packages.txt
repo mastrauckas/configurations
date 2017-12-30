@@ -1,6 +1,7 @@
 ack
 awscli
 axel
+azure-cli
 bash
 calc
 ccrypt
@@ -15,6 +16,7 @@ htop
 irssi
 jpeg
 jq
+kubernetes-cli
 lftp
 libxml2
 links
@@ -22,10 +24,7 @@ lynx
 mysql
 ncdu
 nmap
-perl
-python
-python3
-ruby
+pkg-config
 speedtest-cli
 tig
 tmux
