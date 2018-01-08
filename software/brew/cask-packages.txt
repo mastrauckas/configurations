@@ -3,3 +3,5 @@ clipy
 dropbox
 font-fira-code
 karabiner-elements
+minikube
+virtualbox
