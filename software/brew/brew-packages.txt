@@ -24,7 +24,6 @@ lynx
 mysql
 ncdu
 nmap
-pkg-config
 speedtest-cli
 tig
 tmux
@@ -38,4 +37,6 @@ yarn
 youtube-dl
 z
 zsh
+zsh-autosuggestions
 zsh-completions
+zsh-syntax-highlighting
