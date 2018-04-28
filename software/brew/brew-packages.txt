@@ -5,6 +5,7 @@ azure-cli
 bash
 calc
 ccrypt
+certbot
 curl
 dockutil
 dos2unix
@@ -24,6 +25,7 @@ lynx
 mysql
 ncdu
 nmap
+openssl@1.1
 speedtest-cli
 tig
 tmux
