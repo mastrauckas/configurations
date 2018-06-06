@@ -21,6 +21,7 @@
 	c = show --name-status --oneline -r
 	dt = difftool
 	d = diff
+	fh = show --pretty= --name-only
 [push]
 	default = simple
 [merge]
