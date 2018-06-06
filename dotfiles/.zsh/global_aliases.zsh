@@ -9,6 +9,7 @@ alias ga='git add'
 alias gac='git commit -am'
 alias gs='git status'
 alias gd='git diff'
+alias gds='git diff --staged'
 alias gph='git push'
 alias gpl='git pull'
 
