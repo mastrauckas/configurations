@@ -3,6 +3,13 @@ alias la='ls -AG'
 alias l='ls -CFG'
 alias codei='code-insiders'
 
+# git alias
+alias gc='git commit -m'
+alias ga='git add'
+alias gac='git commit -am'
+alias gs='git status'
+alias gd='git diff'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 # some more ls aliases
