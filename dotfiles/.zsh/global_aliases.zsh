@@ -13,7 +13,8 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias gph='git push'
 alias gpl='git pull'
-alias gc='git checkout'
+alias gco='git checkout'
+
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
