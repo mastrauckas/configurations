@@ -2,6 +2,7 @@ alias ll='ls -alFG'
 alias la='ls -AG'
 alias l='ls -CFG'
 alias codei='code-insiders'
+alias codeis='code-insiders --disable-gpu'
 
 # git alias
 alias gc='git commit -m'
@@ -12,6 +13,7 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias gph='git push'
 alias gpl='git pull'
+alias gc='git checkout'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
