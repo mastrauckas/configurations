@@ -14,6 +14,7 @@ alias gds='git diff --staged'
 alias gph='git push'
 alias gpl='git pull'
 alias gco='git checkout'
+alias gca='git config -l | grep alias'
 
 
 # Add an "alert" alias for long running commands.  Use like so:
