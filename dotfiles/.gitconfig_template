@@ -10,7 +10,7 @@
 [help]
 	autocorrect = 1
 [color]
-	ui = auto
+	ui = always
 [http]
 	;sslVerify = false
 [alias]
