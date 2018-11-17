@@ -5,15 +5,15 @@ alias codei='code-insiders'
 alias codeis='code-insiders --disable-gpu'
 
 # git alias
-alias gc='git commit -m'
-alias ga='git add'
-alias gac='git commit -am'
-alias gs='git status'
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gph='git push'
-alias gpl='git pull'
-alias gc='git checkout'
+alias gtcm='git commit -m'
+alias gta='git add'
+alias gtac='git commit -am'
+alias gts='git status'
+alias gtd='git diff'
+alias gtds='git diff --staged'
+alias gtph='git push'
+alias gtpl='git pull'
+alias gtc='git checkout'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
