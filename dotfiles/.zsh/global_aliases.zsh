@@ -5,6 +5,7 @@ alias codei='code-insiders'
 alias codeis='code-insiders --disable-gpu'
 
 # git alias
+alias gtc='git commit'
 alias gtcm='git commit -m'
 alias gta='git add'
 alias gtac='git commit -am'

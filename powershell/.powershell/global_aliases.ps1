@@ -6,6 +6,7 @@ New-Alias -name open -value ii
 
 
 # git alias
+function gtc { git commit }
 function gtcm($message) { git commit -m $message }
 function gta($add) { git add $add }
 function gtac($message) { git commit -am $message }
