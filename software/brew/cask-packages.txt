@@ -1,7 +1,9 @@
 alfred
 clipy
 dropbox
+font-fira-code
+hyper
 karabiner-elements
+macdown
 minikube
 virtualbox
-hyper

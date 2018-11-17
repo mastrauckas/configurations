@@ -5,7 +5,6 @@ azure-cli
 bash
 calc
 ccrypt
-certbot
 curl
 dockutil
 dos2unix
@@ -22,11 +21,14 @@ lftp
 libxml2
 links
 lynx
+mongodb
 mysql
 ncdu
 nmap
 openssl@1.1
+pkg-config
 speedtest-cli
+sphinx-doc
 tig
 tmux
 tree
@@ -39,6 +41,4 @@ yarn
 youtube-dl
 z
 zsh
-zsh-autosuggestions
 zsh-completions
-zsh-syntax-highlighting

@@ -10,7 +10,7 @@
 [help]
 	autocorrect = 1
 [color]
-	ui = auto
+	ui = always
 [http]
 	;sslVerify = false
 [alias]
@@ -32,3 +32,5 @@
     tool=vimdiff
 [difftool]
     prompt=true
+[pager]
+    diff = false

@@ -14,6 +14,8 @@ alias gtds='git diff --staged'
 alias gtph='git push'
 alias gtpl='git pull'
 alias gtc='git checkout'
+alias gtca='git config -l | grep alias'
+
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
