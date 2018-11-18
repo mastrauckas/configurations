@@ -1,10 +1,12 @@
 ack
+automake
 awscli
 axel
 azure-cli
 bash
 calc
 ccrypt
+cocoapods
 curl
 dockutil
 dos2unix
@@ -12,11 +14,12 @@ gawk
 geoip
 git
 htop
+ideviceinstaller
+ios-deploy
 irssi
 jq
 kubernetes-cli
 lftp
-libxml2
 links
 lynx
 mongodb
