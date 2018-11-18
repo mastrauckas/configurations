@@ -8,13 +8,11 @@ ccrypt
 curl
 dockutil
 dos2unix
-freetype
 gawk
 geoip
 git
 htop
 irssi
-jpeg
 jq
 kubernetes-cli
 lftp
@@ -35,6 +33,7 @@ tree
 unixodbc
 unrar
 vim
+watchman
 weechat
 wget
 yarn
