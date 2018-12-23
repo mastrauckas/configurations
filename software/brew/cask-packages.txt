@@ -1,7 +1,6 @@
 alfred
 clipy
 dropbox
-font-fira-code
 hyper
 karabiner-elements
 macdown

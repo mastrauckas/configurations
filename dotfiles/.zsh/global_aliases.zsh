@@ -42,3 +42,5 @@ alias sc="source ~/.zshrc"
 
 # start a new tmux session
 alias tmuxs="tmux new -s"
+
+eval $(thefuck --alias)

@@ -6,7 +6,7 @@
 	safecrlf = false
 	;Sets a global ignore file.
 	excludesfile = /home/<username>/.gitignore_global
-	editor = vim
+	editor = codei
 [help]
 	autocorrect = 1
 [color]
