@@ -19,7 +19,12 @@ function gtco($checkout) { git checkout $checkout }
 
 # VS Code Aliases
 function codei($open) { code-insiders $open }
-function codeis($open) { code-insiders --disable-gpu$open }
+function codeingpu($open) { code-insiders --disable-gpu$open }
+
+# Kubernetes
+function codeingpu($open) { kubectl config set-context $(kubectl config current-context) -n }
+
+function hyperngpu($open) { hyper --disable-gpu$open }
 
 #Make alias with parameters into functions
 function ll {
