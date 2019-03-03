@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-03-02 18:32:26" build="180626">
+		<key name=".Vanilla" modified="2019-03-02 20:23:41" build="180626">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
-			<value name="StartTasksName" type="string" data="{PowerShell::PowerShell}"/>
+			<value name="StartTasksName" type="string" data="{Custom Prompt PowerShell::PowerShell}"/>
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
@@ -582,27 +582,45 @@
 				<value name="DndRKey" type="hex" data="A2"/>
 				<value name="WndDragKey" type="dword" data="00121101"/>
 			</key>
-			<key name="Tasks" modified="2019-03-02 18:32:26" build="180626">
-				<value name="Count" type="long" data="9"/>
-				<key name="Task1" modified="2019-03-02 18:32:26" build="180626">
+			<key name="Tasks" modified="2019-03-02 20:23:41" build="180626">
+				<value name="Count" type="long" data="11"/>
+				<key name="Task1" modified="2019-03-02 20:23:41" build="180626">
+					<value name="Name" type="string" data="{Custom Prompt PowerShell::PowerShell}"/>
+					<value name="Flags" type="dword" data="00000005"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data="PowerShell -ExecutionPolicy Bypass -NoLogo -NoExit -new_console:d:D:\projects "/>
+				</key>
+				<key name="Task2" modified="2019-03-02 20:23:41" build="180626">
+					<value name="Name" type="string" data="{Custom Prompt PowerShell::PowerShell as Admin}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data="*PowerShell -ExecutionPolicy Bypass -NoLogo -NoExit -new_console:d:D:\projects "/>
+				</key>
+				<key name="Task3" modified="2019-03-02 20:23:41" build="180626">
 					<value name="Name" type="string" data="{PowerShell::PowerShell}"/>
-					<value name="Flags" type="dword" data="00000000"/>
+					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='PowerShell -ExecutionPolicy Bypass -NoLogo -NoExit -Command "Invoke-Expression &apos;Import-Module &apos;&apos;%ConEmuDir%\..\profile.ps1&apos;&apos;&apos;" -new_console:d:D:\projects '/>
 				</key>
-				<key name="Task2" modified="2019-03-02 18:32:26" build="180626">
+				<key name="Task4" modified="2019-03-02 20:23:41" build="180626">
 					<value name="Name" type="string" data="{PowerShell::PowerShell as Admin}"/>
-					<value name="Flags" type="dword" data="00000001"/>
+					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='*PowerShell -ExecutionPolicy Bypass -NoLogo -NoExit -Command "Invoke-Expression &apos;Import-Module &apos;&apos;%ConEmuDir%\..\profile.ps1&apos;&apos;&apos;" -new_console:d:D:\projects '/>
 				</key>
-				<key name="Task3" modified="2019-03-02 18:32:26" build="180626">
+				<key name="Task5" modified="2019-03-02 20:23:41" build="180626">
 					<value name="Name" type="string" data="{cmd::Cmder as Admin}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -611,7 +629,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='*cmd /k ""%ConEmuDir%\..\init.bat" "'/>
 				</key>
-				<key name="Task4" modified="2019-03-02 18:32:26" build="180626">
+				<key name="Task6" modified="2019-03-02 20:23:41" build="180626">
 					<value name="Name" type="string" data="{cmd::Cmder}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -620,7 +638,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='cmd /k ""%ConEmuDir%\..\init.bat" "'/>
 				</key>
-				<key name="Task5" modified="2019-03-02 18:32:26" build="180626">
+				<key name="Task7" modified="2019-03-02 20:23:41" build="180626">
 					<value name="Name" type="string" data="{bash::mintty as Admin}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -629,7 +647,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='*"%ConEmuDir%\..\git-for-windows\usr\bin\mintty.exe" /bin/bash -l'/>
 				</key>
-				<key name="Task6" modified="2019-03-02 18:32:26" build="180626">
+				<key name="Task8" modified="2019-03-02 20:23:41" build="180626">
 					<value name="Name" type="string" data="{bash::mintty}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -638,7 +656,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='"%ConEmuDir%\..\git-for-windows\usr\bin\mintty.exe" /bin/bash -l'/>
 				</key>
-				<key name="Task7" modified="2019-03-02 18:32:26" build="180626">
+				<key name="Task9" modified="2019-03-02 20:23:41" build="180626">
 					<value name="Name" type="string" data="{bash::bash as Admin}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -647,7 +665,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='*cmd /c ""%ConEmuDir%\..\git-for-windows\bin\bash" --login -i"'/>
 				</key>
-				<key name="Task8" modified="2019-03-02 18:32:26" build="180626">
+				<key name="Task10" modified="2019-03-02 20:23:41" build="180626">
 					<value name="Name" type="string" data="{bash::bash}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -656,7 +674,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='cmd /c ""%ConEmuDir%\..\git-for-windows\bin\bash" --login -i"'/>
 				</key>
-				<key name="Task9" modified="2019-03-02 18:32:26" build="180626">
+				<key name="Task11" modified="2019-03-02 20:23:41" build="180626">
 					<value name="Name" type="string" data="{WSL::bash}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
