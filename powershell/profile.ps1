@@ -23,12 +23,12 @@ $env:path += ";C:\Tools\Vim\vim74"
 $env:path += ";C:\Tools\Git\cmd"
 $env:path += ";C:\Tools\Git\bin;C:\Tools\Git\usr\bin"
 
-function prompt {
-    return  GetCustomPromptWithUnicode
-}
-
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
     Import-Module "$ChocolateyProfile"
+}
+
+function global:prompt {
+    return  GetCustomPromptWithUnicode
 }
