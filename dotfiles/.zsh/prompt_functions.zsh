@@ -31,7 +31,7 @@ function getCustomPromptWithUnicode {
       customPrompt="${customPrompt}${RESET}"
 
        local namespace="$(getNamespace)"
-      customPrompt="${customPrompt}${BOLD_RED}${namespace}"
+      customPrompt="${customPrompt}${ORANGE}${namespace}"
 
       customPrompt="${customPrompt}${BOLD_BLUE})"
    fi
