@@ -19,6 +19,23 @@ function getCustomPromptWithUnicode {
    customPrompt="${customPrompt}${LIGHT_CYAN}%~"
    customPrompt="${customPrompt}${RESET}"
 
+    if [ $(isKubectlInstalled) != 0 ]; then
+      customPrompt="${customPrompt}${BOLD_BLUE} kube:("
+      customPrompt="${customPrompt}${RESET}"
+
+      local currentContext="$(getCurrentContext)"
+      customPrompt="${customPrompt}${BOLD_RED}${currentContext}"
+
+      customPrompt="${customPrompt}${RESET}"
+      customPrompt="${customPrompt}${BOLD_BLUE}:"
+      customPrompt="${customPrompt}${RESET}"
+
+       local namespace="$(getNamespace)"
+      customPrompt="${customPrompt}${BOLD_RED}${namespace}"
+
+      customPrompt="${customPrompt}${BOLD_BLUE})"
+   fi
+
    local branchName="$(getCurrentGitBranch)"
    if [ ! -z "$branchName" -a "$branchName" != " " ]; then
       customPrompt="${customPrompt}${BOLD_BLUE} git:("

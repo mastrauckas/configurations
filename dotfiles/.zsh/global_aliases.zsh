@@ -14,7 +14,7 @@ alias gtd='git diff'
 alias gtds='git diff --staged'
 alias gtph='git push'
 alias gtpl='git pull'
-alias gtc='git checkout'
+alias gtco='git checkout'
 alias gtca='git config -l | grep alias'
 
 
@@ -44,3 +44,6 @@ alias sc="source ~/.zshrc"
 alias tmuxs="tmux new -s"
 
 eval $(thefuck --alias)
+
+# kubectl
+alias kns='kubectl config set-context $(kubectl config current-context) --namespace'
