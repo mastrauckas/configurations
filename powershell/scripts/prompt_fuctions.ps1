@@ -1,4 +1,5 @@
 ﻿.  ($PSScriptRoot + "/git_functions.ps1")
+.  ($PSScriptRoot + "/kube_functions.ps1")
 .  ($PSScriptRoot + "/virtual_environments.ps1")
 
 $WHITE=[ConsoleColor]::White
@@ -16,6 +17,22 @@ function GetCustomPromptWithUnicode {
 
 	Write-Host "PS:" -NoNewline -ForegroundColor $DarkGreen
 	Write-Host  -NoNewline -ForegroundColor $Cyan $PWD
+
+    if(isKubectlInstalled -ne 0)
+    {
+        	Write-Host  -NoNewline -ForegroundColor $Green " kube:("
+
+        $currentContext = getCurrentContext
+        Write-Host  -NoNewline -ForegroundColor $DarkCyan $currentContext
+
+        Write-Host  -NoNewline -ForegroundColor $Green ":"
+
+        $namespace = getNamespace
+        Write-Host  -NoNewline -ForegroundColor $Red $namespace
+
+        	Write-Host  -NoNewline -ForegroundColor $Green ")"
+    }
+
 	$branchName=GetCurrentGitBranch
 	if($branchName.Length -ne 0)
 	{
@@ -36,7 +53,7 @@ function GetCustomPromptWithUnicode {
 		else {
 			Write-Host  -NoNewline -ForegroundColor $Red "--none--"
 		}
-		
+
 		Write-Host  -NoNewline -ForegroundColor $Green ")"
 
 		if(IsDirty -eq 1) {
@@ -50,11 +67,11 @@ function GetCustomPromptWithUnicode {
 
 function IsAdmin {
 	$Global:CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent()
-    $CurrentUser.Groups | ForEach-Object { 
+    $CurrentUser.Groups | ForEach-Object {
         if($_.value -eq "S-1-5-32-544") {
 			return 1
-        } 
+        }
     }
-    
+
     return 0
 }
