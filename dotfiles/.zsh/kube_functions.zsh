@@ -1,8 +1,8 @@
 function isKubectlInstalled {
-   if type "kubectl" > /dev/null; then
-      echo "1"
-   else
+   if [[ -n $(which kubectl 2> /dev/null) ]]; then
       echo "0"
+   else
+      echo "1"
    fi
 }
 
