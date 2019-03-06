@@ -16,6 +16,10 @@ alias gtph='git push'
 alias gtpl='git pull'
 alias gtco='git checkout'
 alias gtca='git config -l | grep alias'
+alias gtcount='git shortlog -sn'
+
+# Remove alias that Oh My Zsh creates
+unalias gco 2>/dev/null
 
 
 # Add an "alert" alias for long running commands.  Use like so:
