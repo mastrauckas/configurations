@@ -8,7 +8,7 @@ function isDirty {
       echo "1"
    else
       echo "0"
-  fi
+   fi
 }
 
 function getCurrentGitBranch {
