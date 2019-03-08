@@ -1,6 +1,10 @@
 function isKubectlInstalled {
    if which kubectl > /dev/null; then
-      echo "1"
+     if [[ -n $(kubectl config current-context 2> /dev/null) ]]; then
+         echo "1"
+      else
+         echo "0"
+      fi
    else
       echo "0"
    fi
