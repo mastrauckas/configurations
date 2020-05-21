@@ -1,102 +1,103 @@
-#http://stackoverflow.com/questions/43321/worth-switching-to-zsh-for-casual-use
-#http://askubuntu.com/questions/825625/how-can-i-extend-the-tab-key-auto-completion-in-the-terminal-to-text-in-the-midd
-#http://unix.stackexchange.com/questions/214657/what-does-zstyle-do
-#http://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
-#http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Version-Control-Information
-autoload -U colors && colors
-autoload -U promptinit && promptinit
-autoload -U zutil
-autoload -U compinit
-compinit
-autoload -U complist
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-if [ -z "$HISTFILE" ]; then
-    HISTFILE=$HOME/.zsh_history
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/{username}/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="streamland"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=/Users/{username}/projects/configurations/dotfiles/.zsh
+
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(aws z encode64 git osx yarn docker docker-compose docker-machine brew npm helm npx nvm tmux vscode kubectl minikube redis-cli)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+    export EDITOR='codei'
+else
+    export EDITOR='codei'
 fi
 
-#zsh options:
-#http://zsh.sourceforge.net/Doc/Release/Options.html
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
-setopt correct_all
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-## Command history configuration
-HISTSIZE=10000
-SAVEHIST=10000
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-setopt append_history
-setopt extended_history
-setopt hist_expire_dups_first
-setopt hist_ignore_dups # ignore duplication command history list
-setopt hist_ignore_space
-setopt hist_verify
-setopt inc_append_history
-setopt share_history # share command history data
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/{username}/projects/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/{username}/projects/google-cloud-sdk/path.zsh.inc'; fi
 
-# Changing/making/removing directory
-setopt auto_pushd
-setopt pushd_ignore_dups
-setopt pushdminus
-
-unsetopt menu_complete   # do not autoselect the first completion entry
-unsetopt flowcontrol
-setopt auto_menu         # show completion menu on successive tab press
-setopt complete_in_word
-setopt always_to_end
-
-
-
-zstyle ':completion:*' verbose yes
-zstyle ':completion:*:descriptions' format '%B%d%b'
-zstyle ':completion:*:messages' format '%d'
-zstyle ':completion:*:warnings' format 'No matches for: %d'
-zstyle ':completion:*' group-name ”
-
-zstyle ':completion:*' matcher-list '' \
-  'm:{a-z\-}={A-Z\_}' \
-  'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
-  'r:|?=** m:{a-z\-}={A-Z\_}'
-#autoload -Uz bracketed-paste-magic
-#zle -N bracketed-paste bracketed-paste-magic
-#autoload -Uz url-quote-magic
-#zle -N self-insert url-quote-magic
-
-
-autoload -U compinit
-
-compinit
-
-if [ -f ~/z/z.sh ]; then
-   source ~/z/z.sh
-fi
-
-if [ -f ~/.zsh/.global_exports.zsh ]; then
-    source ~/.zsh/.global_exports.zsh
-fi
-
-if [ -f ~/.zsh/.local_exports.zsh ]; then
-    source ~/.zsh/.local_exports.zsh
-fi
-
-if [ -f ~/.zsh/.global_aliases.zsh ]; then
-    source ~/.zsh/.global_aliases.zsh
-fi
-
-if [ -f ~/.zsh/.local_aliases.zsh ]; then
-    source ~/.zsh/.local_aliases.zsh
-fi
-
-if [ -f ~/.zsh/.local_miscellaneous.zsh ]; then
-    source ~/.zsh/.local_miscellaneous.zsh
-fi
-
-if [ -f ~/.zsh/.functions.zsh ]; then
-    source ~/.zsh/.functions.zsh
-fi
-
-if [ -f ~/.zsh/.local_aliases.zsh ]; then
-    source ~/.zsh/.local_aliases.zsh
-fi
-
-PROMPT_COMMAND=getCustomPromptWithUnicode
-precmd() { eval "$PROMPT_COMMAND" }
-
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/{username}/projects/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/{username}/projects/google-cloud-sdk/completion.zsh.inc'; fi
