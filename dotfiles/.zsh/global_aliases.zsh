@@ -4,6 +4,8 @@ alias l='ls -CFG'
 alias codei='code-insiders'
 alias codeis='code-insiders --disable-gpu'
 
+alias ads='azuredatastudio'
+
 # git alias
 alias gtc='git commit'
 alias gtcm='git commit -m'

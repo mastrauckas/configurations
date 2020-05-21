@@ -5,4 +5,5 @@ hyper
 karabiner-elements
 macdown
 minikube
+powershell
 virtualbox
