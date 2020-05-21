@@ -1,9 +1,7 @@
-alfred
 clipy
-dropbox
 hyper
-karabiner-elements
 macdown
-minikube
+ngrok
+postman
 powershell
-virtualbox
+vagrant
