@@ -3,14 +3,14 @@ Might need to do `brew tap linuxbrew/xorg`
 Add brew packages to package file.
 brew leaves > brew-packages.txt
 
-Install packages on new machine.
-brew install $(cat brew-packages.txt)
+Install packages on new machine for linux.
+brew install $(cat brew-packages-linux.txt)
+
+Install packages on new machine for macos.
+brew install $(cat brew-packages-mac.txt)
 
 Add cask packages to package file.
 brew cask list > cask-packages.txt
 
-Install packages on new machine for linux.
-brew cask install $(cat cask-packages-linux.txt)
-
 Install packages on new machine for macos.
-brew cask install $(cat cask-packages-mac.txt)
+brew cask install $(cat cask-packages.txt)

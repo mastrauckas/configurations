@@ -23,6 +23,10 @@ alias gtcount='git shortlog -sn'
 # Remove alias that Oh My Zsh creates
 unalias gco 2>/dev/null
 
+if [ -d /home/linuxbrew/.linuxbrew ]; then
+   eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+fi
+
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
