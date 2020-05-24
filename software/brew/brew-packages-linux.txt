@@ -6,16 +6,13 @@ azure-cli
 bash
 calc
 ccrypt
-cocoapods
 curl
-dockutil
+docker
 dos2unix
 gawk
 geoip
 git
 htop
-ideviceinstaller
-ios-deploy
 irssi
 jq
 kubernetes-cli
