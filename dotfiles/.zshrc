@@ -58,6 +58,10 @@ COMPLETION_WAITING_DOTS="true"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 ZSH_CUSTOM=/Users/{username}/projects/configurations/dotfiles/.zsh
 
+if [ -d /home/linuxbrew/.linuxbrew ]; then
+   eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+fi
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
