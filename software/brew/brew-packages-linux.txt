@@ -25,7 +25,7 @@ ncdu
 nmap
 pkg-config
 python
-python@2
+python@3
 ripgrep
 speedtest-cli
 sphinx-doc
