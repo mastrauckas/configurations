@@ -1,0 +1,116 @@
+{
+	"$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate": "2021-05-30T14:52:34.950-00:00",
+	"Sources": [
+		{
+			"Packages": [
+				{
+					"PackageIdentifier": "AgileBits.1Password"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VisualStudio.2019.Community"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VisualStudioCode.Insiders"
+				},
+				{
+					"PackageIdentifier": "Blizzard.BattleNet"
+				},
+				{
+					"PackageIdentifier": "CPUID.CPU-Z"
+				},
+				{
+					"PackageIdentifier": "CPUID.HWMonitor"
+				},
+				{
+					"PackageIdentifier": "Discord.Discord"
+				},
+				{
+					"PackageIdentifier": "Dropbox.Dropbox"
+				},
+				{
+					"PackageIdentifier": "Git.Git"
+				},
+				{
+					"PackageIdentifier": "Google.Chrome"
+				},
+				{
+					"PackageIdentifier": "Google.ChromeDev"
+				},
+				{
+					"PackageIdentifier": "Google.ChromeBeta"
+				},
+				{
+					"PackageIdentifier": "Google..ChromeCanary"
+				},
+				{
+					"PackageIdentifier": "Microsoft.Edge"
+				},
+				{
+					"PackageIdentifier": "Microsoft.webview2-evergreen"
+				},
+				{
+					"PackageIdentifier": "Microsoft.WindowsTerminalPreview"
+				},
+				{
+					"PackageIdentifier": "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier": "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier": "Razer.Synapse"
+				},
+				{
+					"PackageIdentifier": "Valve.Steam"
+				},
+				{
+					"PackageIdentifier": "Ubisoft.Connect"
+				},
+				{
+					"PackageIdentifier": "Zoom.Zoom"
+				},
+				{
+					"PackageIdentifier": "Notion.Notion"
+				},
+				{
+					"PackageIdentifier": "alcpu.CoreTemp"
+				},
+				{
+					"PackageIdentifier": "tastyworks.tastyworks"
+				},
+				{
+					"PackageIdentifier": "Mojang.MinecraftLauncher"
+				},
+				{
+					"PackageIdentifier": "Yarn.Yarn"
+				},
+				{
+					"PackageIdentifier": "Microsoft.AzureDataStudio"
+				},
+				{
+					"PackageIdentifier": "GOG.Galaxy"
+				},
+				{
+					"PackageIdentifier": "Nvidia.GeForceExperience"
+				},
+				{
+					"PackageIdentifier": "EpicGames.EpicGamesLauncher"
+				},
+				{
+					"PackageIdentifier": "UnityTechnologies.UnityHub"
+				}
+			],
+			"SourceDetails": {
+				"Argument": "https://winget.azureedge.net/cache",
+				"Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name": "winget",
+				"Type": "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion": "1.0.11451"
+}
